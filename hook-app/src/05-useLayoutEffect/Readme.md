@@ -1,0 +1,1 @@
+# realiza un efecto secundario cuando el componente termina de renderizarse de acuerdo a una dependencia
