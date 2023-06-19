@@ -1,7 +1,7 @@
 export const fileUpload = async (file) =>{
 
     if( !file ){
-        throw new Error("No tenemos ningún archivo a subir");
+        return null;
     }
 
     const cloudUrl = 'https://api.cloudinary.com/v1_1/daijgyraz/upload';
@@ -31,7 +31,7 @@ export const fileUpload = async (file) =>{
         
     } catch (error) {
         console.error(error);
-        throw new Error( error.message );
+        return null;
     }
 
 
